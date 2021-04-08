@@ -1,0 +1,14 @@
+* emacs-mac-follow-appearance
+A plugin that lets you pick themes for macOS Dark and Light modes. Theme changing happens automatically and follows your system's appearance. Works only with Yamamoto Mitsuharu's emacs-mac-port.
+
+No polling, no background checks, no AppleScript. Uses built-in event handlers and somehow even manages to change themes with a nice animation.
+
+[[https://k60.in/public/emfa-demo.gif]]
+
+** Usage
+Plug it in with ~(require 'emacs-mac-follow-appearace)~. Customize variables with ~M-x customize-group RET emacs-mac-follow-appearance RET~.
+
+** See also
+[[https://github.com/LionyxML/auto-dark-emacs][Auto-dark-emacs plugin]] based on AppleScript polling.
+
+Licensed under GPLv3 because why not.
