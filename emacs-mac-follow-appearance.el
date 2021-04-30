@@ -36,7 +36,7 @@
   "Disable all themes and enables a theme based on value of emfa/dark-theme and emfa/light-theme custom variables."
   (interactive)
   (mapcar #'disable-theme custom-enabled-themes)
-  (if (v-dark-mode-p)
+  (if (emfa/dark-mode-p)
       (load-theme emfa/dark-theme t)
     (when emfa/light-theme
       (load-theme emfa/light-theme t))))
